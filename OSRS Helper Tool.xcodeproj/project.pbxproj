@@ -1,0 +1,423 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		453FFC551F096CBF00CE5CF5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453FFC541F096CBF00CE5CF5 /* AppDelegate.swift */; };
+		453FFC571F096CBF00CE5CF5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453FFC561F096CBF00CE5CF5 /* ViewController.swift */; };
+		453FFC5A1F096CBF00CE5CF5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 453FFC581F096CBF00CE5CF5 /* Main.storyboard */; };
+		453FFC5C1F096CBF00CE5CF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 453FFC5B1F096CBF00CE5CF5 /* Assets.xcassets */; };
+		453FFC5F1F096CBF00CE5CF5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 453FFC5D1F096CBF00CE5CF5 /* LaunchScreen.storyboard */; };
+		453FFC6A1F096CBF00CE5CF5 /* OSRS_Helper_ToolUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453FFC691F096CBF00CE5CF5 /* OSRS_Helper_ToolUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		453FFC661F096CBF00CE5CF5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 453FFC491F096CBE00CE5CF5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 453FFC501F096CBE00CE5CF5;
+			remoteInfo = "OSRS Helper Tool";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		453FFC511F096CBF00CE5CF5 /* OSRS Helper Tool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OSRS Helper Tool.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		453FFC541F096CBF00CE5CF5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		453FFC561F096CBF00CE5CF5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		453FFC591F096CBF00CE5CF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		453FFC5B1F096CBF00CE5CF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		453FFC5E1F096CBF00CE5CF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		453FFC601F096CBF00CE5CF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		453FFC651F096CBF00CE5CF5 /* OSRS Helper ToolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OSRS Helper ToolUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		453FFC691F096CBF00CE5CF5 /* OSRS_Helper_ToolUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSRS_Helper_ToolUITests.swift; sourceTree = "<group>"; };
+		453FFC6B1F096CBF00CE5CF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		453FFC4E1F096CBE00CE5CF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		453FFC621F096CBF00CE5CF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		453FFC481F096CBE00CE5CF5 = {
+			isa = PBXGroup;
+			children = (
+				453FFC531F096CBF00CE5CF5 /* OSRS Helper Tool */,
+				453FFC681F096CBF00CE5CF5 /* OSRS Helper ToolUITests */,
+				453FFC521F096CBF00CE5CF5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		453FFC521F096CBF00CE5CF5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				453FFC511F096CBF00CE5CF5 /* OSRS Helper Tool.app */,
+				453FFC651F096CBF00CE5CF5 /* OSRS Helper ToolUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		453FFC531F096CBF00CE5CF5 /* OSRS Helper Tool */ = {
+			isa = PBXGroup;
+			children = (
+				453FFC541F096CBF00CE5CF5 /* AppDelegate.swift */,
+				453FFC561F096CBF00CE5CF5 /* ViewController.swift */,
+				453FFC581F096CBF00CE5CF5 /* Main.storyboard */,
+				453FFC5B1F096CBF00CE5CF5 /* Assets.xcassets */,
+				453FFC5D1F096CBF00CE5CF5 /* LaunchScreen.storyboard */,
+				453FFC601F096CBF00CE5CF5 /* Info.plist */,
+			);
+			path = "OSRS Helper Tool";
+			sourceTree = "<group>";
+		};
+		453FFC681F096CBF00CE5CF5 /* OSRS Helper ToolUITests */ = {
+			isa = PBXGroup;
+			children = (
+				453FFC691F096CBF00CE5CF5 /* OSRS_Helper_ToolUITests.swift */,
+				453FFC6B1F096CBF00CE5CF5 /* Info.plist */,
+			);
+			path = "OSRS Helper ToolUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		453FFC501F096CBE00CE5CF5 /* OSRS Helper Tool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 453FFC6E1F096CBF00CE5CF5 /* Build configuration list for PBXNativeTarget "OSRS Helper Tool" */;
+			buildPhases = (
+				453FFC4D1F096CBE00CE5CF5 /* Sources */,
+				453FFC4E1F096CBE00CE5CF5 /* Frameworks */,
+				453FFC4F1F096CBE00CE5CF5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "OSRS Helper Tool";
+			productName = "OSRS Helper Tool";
+			productReference = 453FFC511F096CBF00CE5CF5 /* OSRS Helper Tool.app */;
+			productType = "com.apple.product-type.application";
+		};
+		453FFC641F096CBF00CE5CF5 /* OSRS Helper ToolUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 453FFC711F096CBF00CE5CF5 /* Build configuration list for PBXNativeTarget "OSRS Helper ToolUITests" */;
+			buildPhases = (
+				453FFC611F096CBF00CE5CF5 /* Sources */,
+				453FFC621F096CBF00CE5CF5 /* Frameworks */,
+				453FFC631F096CBF00CE5CF5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				453FFC671F096CBF00CE5CF5 /* PBXTargetDependency */,
+			);
+			name = "OSRS Helper ToolUITests";
+			productName = "OSRS Helper ToolUITests";
+			productReference = 453FFC651F096CBF00CE5CF5 /* OSRS Helper ToolUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		453FFC491F096CBE00CE5CF5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = Personal;
+				TargetAttributes = {
+					453FFC501F096CBE00CE5CF5 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 8B2BT32S4H;
+						ProvisioningStyle = Automatic;
+					};
+					453FFC641F096CBF00CE5CF5 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 8B2BT32S4H;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 453FFC501F096CBE00CE5CF5;
+					};
+				};
+			};
+			buildConfigurationList = 453FFC4C1F096CBE00CE5CF5 /* Build configuration list for PBXProject "OSRS Helper Tool" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 453FFC481F096CBE00CE5CF5;
+			productRefGroup = 453FFC521F096CBF00CE5CF5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				453FFC501F096CBE00CE5CF5 /* OSRS Helper Tool */,
+				453FFC641F096CBF00CE5CF5 /* OSRS Helper ToolUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		453FFC4F1F096CBE00CE5CF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				453FFC5F1F096CBF00CE5CF5 /* LaunchScreen.storyboard in Resources */,
+				453FFC5C1F096CBF00CE5CF5 /* Assets.xcassets in Resources */,
+				453FFC5A1F096CBF00CE5CF5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		453FFC631F096CBF00CE5CF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		453FFC4D1F096CBE00CE5CF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				453FFC571F096CBF00CE5CF5 /* ViewController.swift in Sources */,
+				453FFC551F096CBF00CE5CF5 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		453FFC611F096CBF00CE5CF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				453FFC6A1F096CBF00CE5CF5 /* OSRS_Helper_ToolUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		453FFC671F096CBF00CE5CF5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 453FFC501F096CBE00CE5CF5 /* OSRS Helper Tool */;
+			targetProxy = 453FFC661F096CBF00CE5CF5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		453FFC581F096CBF00CE5CF5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				453FFC591F096CBF00CE5CF5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		453FFC5D1F096CBF00CE5CF5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				453FFC5E1F096CBF00CE5CF5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		453FFC6C1F096CBF00CE5CF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		453FFC6D1F096CBF00CE5CF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		453FFC6F1F096CBF00CE5CF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8B2BT32S4H;
+				INFOPLIST_FILE = "OSRS Helper Tool/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "johningwersen.OSRS-Helper-Tool";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		453FFC701F096CBF00CE5CF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8B2BT32S4H;
+				INFOPLIST_FILE = "OSRS Helper Tool/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "johningwersen.OSRS-Helper-Tool";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		453FFC721F096CBF00CE5CF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 8B2BT32S4H;
+				INFOPLIST_FILE = "OSRS Helper ToolUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "johningwersen.OSRS-Helper-ToolUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "OSRS Helper Tool";
+			};
+			name = Debug;
+		};
+		453FFC731F096CBF00CE5CF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 8B2BT32S4H;
+				INFOPLIST_FILE = "OSRS Helper ToolUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "johningwersen.OSRS-Helper-ToolUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "OSRS Helper Tool";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		453FFC4C1F096CBE00CE5CF5 /* Build configuration list for PBXProject "OSRS Helper Tool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				453FFC6C1F096CBF00CE5CF5 /* Debug */,
+				453FFC6D1F096CBF00CE5CF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		453FFC6E1F096CBF00CE5CF5 /* Build configuration list for PBXNativeTarget "OSRS Helper Tool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				453FFC6F1F096CBF00CE5CF5 /* Debug */,
+				453FFC701F096CBF00CE5CF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		453FFC711F096CBF00CE5CF5 /* Build configuration list for PBXNativeTarget "OSRS Helper ToolUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				453FFC721F096CBF00CE5CF5 /* Debug */,
+				453FFC731F096CBF00CE5CF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 453FFC491F096CBE00CE5CF5 /* Project object */;
+}
