@@ -13,6 +13,12 @@
 		453FFC5C1F096CBF00CE5CF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 453FFC5B1F096CBF00CE5CF5 /* Assets.xcassets */; };
 		453FFC5F1F096CBF00CE5CF5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 453FFC5D1F096CBF00CE5CF5 /* LaunchScreen.storyboard */; };
 		453FFC6A1F096CBF00CE5CF5 /* OSRS_Helper_ToolUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453FFC691F096CBF00CE5CF5 /* OSRS_Helper_ToolUITests.swift */; };
+		453FFC751F099B9E00CE5CF5 /* SkillResourceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453FFC741F099B9E00CE5CF5 /* SkillResourceViewController.swift */; };
+		453FFC771F099E3C00CE5CF5 /* SkillTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453FFC761F099E3C00CE5CF5 /* SkillTableViewCell.swift */; };
+		453FFC7A1F09A35B00CE5CF5 /* Attack.png in Resources */ = {isa = PBXBuildFile; fileRef = 453FFC791F09A35B00CE5CF5 /* Attack.png */; };
+		453FFC7C1F09A56600CE5CF5 /* SkillCalculationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453FFC7B1F09A56600CE5CF5 /* SkillCalculationsViewController.swift */; };
+		453FFC821F09A8FF00CE5CF5 /* CombatCalcViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453FFC811F09A8FF00CE5CF5 /* CombatCalcViewController.swift */; };
+		453FFC841F09A98F00CE5CF5 /* SkillMethodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453FFC831F09A98F00CE5CF5 /* SkillMethodTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +42,12 @@
 		453FFC651F096CBF00CE5CF5 /* OSRS Helper ToolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OSRS Helper ToolUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		453FFC691F096CBF00CE5CF5 /* OSRS_Helper_ToolUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSRS_Helper_ToolUITests.swift; sourceTree = "<group>"; };
 		453FFC6B1F096CBF00CE5CF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		453FFC741F099B9E00CE5CF5 /* SkillResourceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkillResourceViewController.swift; sourceTree = "<group>"; };
+		453FFC761F099E3C00CE5CF5 /* SkillTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkillTableViewCell.swift; sourceTree = "<group>"; };
+		453FFC791F09A35B00CE5CF5 /* Attack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Attack.png; sourceTree = "<group>"; };
+		453FFC7B1F09A56600CE5CF5 /* SkillCalculationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkillCalculationsViewController.swift; sourceTree = "<group>"; };
+		453FFC811F09A8FF00CE5CF5 /* CombatCalcViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CombatCalcViewController.swift; path = ../CombatCalcViewController.swift; sourceTree = "<group>"; };
+		453FFC831F09A98F00CE5CF5 /* SkillMethodTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SkillMethodTableViewCell.swift; path = ../SkillMethodTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,9 +89,11 @@
 		453FFC531F096CBF00CE5CF5 /* OSRS Helper Tool */ = {
 			isa = PBXGroup;
 			children = (
-				453FFC541F096CBF00CE5CF5 /* AppDelegate.swift */,
-				453FFC561F096CBF00CE5CF5 /* ViewController.swift */,
+				453FFC781F09A19C00CE5CF5 /* Images */,
+				453FFC7D1F09A57100CE5CF5 /* ViewControllers */,
+				453FFC7E1F09A57800CE5CF5 /* TableCells */,
 				453FFC581F096CBF00CE5CF5 /* Main.storyboard */,
+				453FFC541F096CBF00CE5CF5 /* AppDelegate.swift */,
 				453FFC5B1F096CBF00CE5CF5 /* Assets.xcassets */,
 				453FFC5D1F096CBF00CE5CF5 /* LaunchScreen.storyboard */,
 				453FFC601F096CBF00CE5CF5 /* Info.plist */,
@@ -94,6 +108,34 @@
 				453FFC6B1F096CBF00CE5CF5 /* Info.plist */,
 			);
 			path = "OSRS Helper ToolUITests";
+			sourceTree = "<group>";
+		};
+		453FFC781F09A19C00CE5CF5 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				453FFC791F09A35B00CE5CF5 /* Attack.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		453FFC7D1F09A57100CE5CF5 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				453FFC811F09A8FF00CE5CF5 /* CombatCalcViewController.swift */,
+				453FFC561F096CBF00CE5CF5 /* ViewController.swift */,
+				453FFC741F099B9E00CE5CF5 /* SkillResourceViewController.swift */,
+				453FFC7B1F09A56600CE5CF5 /* SkillCalculationsViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		453FFC7E1F09A57800CE5CF5 /* TableCells */ = {
+			isa = PBXGroup;
+			children = (
+				453FFC761F099E3C00CE5CF5 /* SkillTableViewCell.swift */,
+				453FFC831F09A98F00CE5CF5 /* SkillMethodTableViewCell.swift */,
+			);
+			name = TableCells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,6 +224,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				453FFC5F1F096CBF00CE5CF5 /* LaunchScreen.storyboard in Resources */,
+				453FFC7A1F09A35B00CE5CF5 /* Attack.png in Resources */,
 				453FFC5C1F096CBF00CE5CF5 /* Assets.xcassets in Resources */,
 				453FFC5A1F096CBF00CE5CF5 /* Main.storyboard in Resources */,
 			);
@@ -201,8 +244,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				453FFC7C1F09A56600CE5CF5 /* SkillCalculationsViewController.swift in Sources */,
+				453FFC821F09A8FF00CE5CF5 /* CombatCalcViewController.swift in Sources */,
+				453FFC751F099B9E00CE5CF5 /* SkillResourceViewController.swift in Sources */,
+				453FFC771F099E3C00CE5CF5 /* SkillTableViewCell.swift in Sources */,
 				453FFC571F096CBF00CE5CF5 /* ViewController.swift in Sources */,
 				453FFC551F096CBF00CE5CF5 /* AppDelegate.swift in Sources */,
+				453FFC841F09A98F00CE5CF5 /* SkillMethodTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
