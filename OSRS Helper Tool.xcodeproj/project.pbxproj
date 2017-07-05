@@ -19,6 +19,7 @@
 		453FFC7C1F09A56600CE5CF5 /* SkillCalculationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453FFC7B1F09A56600CE5CF5 /* SkillCalculationsViewController.swift */; };
 		453FFC821F09A8FF00CE5CF5 /* CombatCalcViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453FFC811F09A8FF00CE5CF5 /* CombatCalcViewController.swift */; };
 		453FFC841F09A98F00CE5CF5 /* SkillMethodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453FFC831F09A98F00CE5CF5 /* SkillMethodTableViewCell.swift */; };
+		453FFC881F0C671B00CE5CF5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453FFC871F0C671B00CE5CF5 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		453FFC7B1F09A56600CE5CF5 /* SkillCalculationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkillCalculationsViewController.swift; sourceTree = "<group>"; };
 		453FFC811F09A8FF00CE5CF5 /* CombatCalcViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CombatCalcViewController.swift; path = ../CombatCalcViewController.swift; sourceTree = "<group>"; };
 		453FFC831F09A98F00CE5CF5 /* SkillMethodTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SkillMethodTableViewCell.swift; path = ../SkillMethodTableViewCell.swift; sourceTree = "<group>"; };
+		453FFC871F0C671B00CE5CF5 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = ../Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 				453FFC7D1F09A57100CE5CF5 /* ViewControllers */,
 				453FFC7E1F09A57800CE5CF5 /* TableCells */,
 				453FFC581F096CBF00CE5CF5 /* Main.storyboard */,
+				453FFC871F0C671B00CE5CF5 /* Constants.swift */,
 				453FFC541F096CBF00CE5CF5 /* AppDelegate.swift */,
 				453FFC5B1F096CBF00CE5CF5 /* Assets.xcassets */,
 				453FFC5D1F096CBF00CE5CF5 /* LaunchScreen.storyboard */,
@@ -251,6 +254,7 @@
 				453FFC571F096CBF00CE5CF5 /* ViewController.swift in Sources */,
 				453FFC551F096CBF00CE5CF5 /* AppDelegate.swift in Sources */,
 				453FFC841F09A98F00CE5CF5 /* SkillMethodTableViewCell.swift in Sources */,
+				453FFC881F0C671B00CE5CF5 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

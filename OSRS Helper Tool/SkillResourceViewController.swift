@@ -10,9 +10,11 @@ import UIKit
 
 class SkillResourceViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
-    static let skills = ["Attack", "Strength", "Defence", "Range", "Prayer", "Magic", "Runecraft", "Construction", "Hitpoints", "Agility", "Herblore", "Thieving", "Crafting", "Fletching", "Slayer", "Hunter", "Mining", "Smithing", "Fishing", "Cooking", "Firemaking", "Woodcutting", "Farming"]
+    
     
     @IBOutlet weak var skillsTableView: UITableView!
+    
+    var index = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,24 +33,29 @@ class SkillResourceViewController: UIViewController, UITableViewDelegate, UITabl
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        //todo
+        self.index = indexPath.row
+        //for now just always assume buyable, needs to be fixed to handle combat
+        self.performSegue(withIdentifier: "skillCalcSegue", sender: self)
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "skillCell", for: indexPath) as! SkillTableViewCell
-        cell.skillNameLabel.text = SkillResourceViewController.skills[indexPath.row]
+        cell.skillNameLabel.text = Constants.skills[indexPath.row]
         cell.skillImageView.image = UIImage(named: "Attack")
         
         return cell
     }
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        if let destinationVC = segue.destination as? SkillCalculationsViewController {
+            destinationVC.skillIndex = self.index
+        }
     }
-    */
+    
 
 }

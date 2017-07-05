@@ -19,12 +19,15 @@ class SkillCalculationsViewController: UIViewController, UITableViewDataSource, 
     @IBOutlet weak var costLabel: UILabel!
     @IBOutlet weak var TimeLabel: UILabel!
     
-    var index = 0
+    var skillIndex = 0
+    var methodArray = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.methodTableView.delegate = self
         self.methodTableView.dataSource = self
+        self.methodArray = Constants.methods[Constants.skills[skillIndex]]!
+        self.skillNameLabel.text = Constants.skills[skillIndex]
         // Do any additional setup after loading the view.
     }
 
@@ -42,12 +45,12 @@ class SkillCalculationsViewController: UIViewController, UITableViewDataSource, 
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "skillMethodCell", for: indexPath) as! SkillMethodTableViewCell
+        cell.methodLabel.text = methodArray[indexPath.row * 2]
         return cell
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        //todo
-        return 3
+        return self.methodArray.count / 2
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
