@@ -20,6 +20,8 @@
 		453FFC821F09A8FF00CE5CF5 /* CombatCalcViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453FFC811F09A8FF00CE5CF5 /* CombatCalcViewController.swift */; };
 		453FFC841F09A98F00CE5CF5 /* SkillMethodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453FFC831F09A98F00CE5CF5 /* SkillMethodTableViewCell.swift */; };
 		453FFC881F0C671B00CE5CF5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453FFC871F0C671B00CE5CF5 /* Constants.swift */; };
+		45431F491F146F9300EA51B1 /* checkmark.png in Resources */ = {isa = PBXBuildFile; fileRef = 45431F481F146F9300EA51B1 /* checkmark.png */; };
+		45431F4B1F1472E700EA51B1 /* RankLevelXp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45431F4A1F1472E700EA51B1 /* RankLevelXp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,8 @@
 		453FFC811F09A8FF00CE5CF5 /* CombatCalcViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CombatCalcViewController.swift; path = ../CombatCalcViewController.swift; sourceTree = "<group>"; };
 		453FFC831F09A98F00CE5CF5 /* SkillMethodTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SkillMethodTableViewCell.swift; path = ../SkillMethodTableViewCell.swift; sourceTree = "<group>"; };
 		453FFC871F0C671B00CE5CF5 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = ../Constants.swift; sourceTree = "<group>"; };
+		45431F481F146F9300EA51B1 /* checkmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkmark.png; sourceTree = "<group>"; };
+		45431F4A1F1472E700EA51B1 /* RankLevelXp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RankLevelXp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,7 @@
 				453FFC7E1F09A57800CE5CF5 /* TableCells */,
 				453FFC581F096CBF00CE5CF5 /* Main.storyboard */,
 				453FFC871F0C671B00CE5CF5 /* Constants.swift */,
+				45431F4A1F1472E700EA51B1 /* RankLevelXp.swift */,
 				453FFC541F096CBF00CE5CF5 /* AppDelegate.swift */,
 				453FFC5B1F096CBF00CE5CF5 /* Assets.xcassets */,
 				453FFC5D1F096CBF00CE5CF5 /* LaunchScreen.storyboard */,
@@ -116,6 +121,7 @@
 		453FFC781F09A19C00CE5CF5 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				45431F481F146F9300EA51B1 /* checkmark.png */,
 				453FFC791F09A35B00CE5CF5 /* Attack.png */,
 			);
 			name = Images;
@@ -227,6 +233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				453FFC5F1F096CBF00CE5CF5 /* LaunchScreen.storyboard in Resources */,
+				45431F491F146F9300EA51B1 /* checkmark.png in Resources */,
 				453FFC7A1F09A35B00CE5CF5 /* Attack.png in Resources */,
 				453FFC5C1F096CBF00CE5CF5 /* Assets.xcassets in Resources */,
 				453FFC5A1F096CBF00CE5CF5 /* Main.storyboard in Resources */,
@@ -249,6 +256,7 @@
 			files = (
 				453FFC7C1F09A56600CE5CF5 /* SkillCalculationsViewController.swift in Sources */,
 				453FFC821F09A8FF00CE5CF5 /* CombatCalcViewController.swift in Sources */,
+				45431F4B1F1472E700EA51B1 /* RankLevelXp.swift in Sources */,
 				453FFC751F099B9E00CE5CF5 /* SkillResourceViewController.swift in Sources */,
 				453FFC771F099E3C00CE5CF5 /* SkillTableViewCell.swift in Sources */,
 				453FFC571F096CBF00CE5CF5 /* ViewController.swift in Sources */,
@@ -393,6 +401,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8B2BT32S4H;
 				INFOPLIST_FILE = "OSRS Helper Tool/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "johningwersen.OSRS-Helper-Tool";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -406,6 +415,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8B2BT32S4H;
 				INFOPLIST_FILE = "OSRS Helper Tool/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "johningwersen.OSRS-Helper-Tool";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -460,6 +470,7 @@
 				453FFC701F096CBF00CE5CF5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		453FFC711F096CBF00CE5CF5 /* Build configuration list for PBXNativeTarget "OSRS Helper ToolUITests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +479,7 @@
 				453FFC731F096CBF00CE5CF5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
