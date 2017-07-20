@@ -41,7 +41,7 @@ class SkillResourceViewController: UIViewController, UITableViewDelegate, UITabl
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "skillCell", for: indexPath) as! SkillTableViewCell
         cell.skillNameLabel.text = Constants.skills[indexPath.row]
-        cell.skillImageView.image = UIImage(named: "Attack")
+        cell.skillImageView.image = Constants.imageSkills[indexPath.row]
         
         return cell
     }
