@@ -12,6 +12,8 @@ class SkillMethodTableViewCell: UITableViewCell {
 
     @IBOutlet weak var methodLabel: UILabel!
     @IBOutlet weak var gpXpLabel: UILabel!
+    @IBOutlet weak var backgroundLabel: UILabel!
+    @IBOutlet weak var methodImageView: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()

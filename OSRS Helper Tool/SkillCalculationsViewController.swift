@@ -96,6 +96,9 @@ class SkillCalculationsViewController: UIViewController, UITableViewDataSource, 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "skillMethodCell", for: indexPath) as! SkillMethodTableViewCell
         cell.methodLabel.text = methodArray[indexPath.row * 2]
+        cell.gpXpLabel.text = "todo"
+        cell.backgroundLabel.backgroundColor = UIColor.lightGray
+        cell.methodImageView.image = UIImage(named: "Attack-icon")
         return cell
     }
     

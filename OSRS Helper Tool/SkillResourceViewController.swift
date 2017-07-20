@@ -16,6 +16,7 @@ class SkillResourceViewController: UIViewController, UITableViewDelegate, UITabl
     
     var index = 0
     
+
     override func viewDidLoad() {
         super.viewDidLoad()
         self.skillsTableView.delegate = self
@@ -41,7 +42,10 @@ class SkillResourceViewController: UIViewController, UITableViewDelegate, UITabl
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "skillCell", for: indexPath) as! SkillTableViewCell
         cell.skillNameLabel.text = Constants.skills[indexPath.row]
+        cell.skillOutlineLabel.text = Constants.skills[indexPath.row]
+        cell.skillNameLabel.textColor = Constants.skillSecondaryColors[indexPath.row]
         cell.skillImageView.image = Constants.imageSkills[indexPath.row]
+        cell.backgroundColor = Constants.skillPrimaryColors[indexPath.row]
         
         return cell
     }

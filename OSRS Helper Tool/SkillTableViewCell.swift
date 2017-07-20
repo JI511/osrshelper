@@ -12,7 +12,7 @@ class SkillTableViewCell: UITableViewCell {
 
     @IBOutlet weak var skillNameLabel: UILabel!
     @IBOutlet weak var skillImageView: UIImageView!
-    
+    @IBOutlet weak var skillOutlineLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
