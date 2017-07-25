@@ -15,6 +15,29 @@ class SkillResourceViewController: UIViewController, UITableViewDelegate, UITabl
     @IBOutlet weak var skillsTableView: UITableView!
     
     var index = 0
+    var selectedSkills = Constants.skills
+    var skillName = ""
+    
+    @IBAction func showAllSkillsButton(_ sender: UIButton) {
+        self.selectedSkills = Constants.skills
+        self.skillsTableView.reloadData()
+    }
+    @IBAction func showBuyableSkillsButton(_ sender: UIButton) {
+        self.selectedSkills = Constants.buyableSkills
+        self.skillsTableView.reloadData()
+    }
+    @IBAction func showCombatSkillsButton(_ sender: UIButton) {
+        self.selectedSkills = Constants.combatSkills
+        self.skillsTableView.reloadData()
+    }
+    @IBAction func showGatheringSkillsButton(_ sender: UIButton) {
+        self.selectedSkills = Constants.gatheringSkills
+        self.skillsTableView.reloadData()
+    }
+    @IBAction func showSupportSkillsButton(_ sender: UIButton) {
+        self.selectedSkills = Constants.supportSkills
+        self.skillsTableView.reloadData()
+    }
     
 
     override func viewDidLoad() {
@@ -29,23 +52,31 @@ class SkillResourceViewController: UIViewController, UITableViewDelegate, UITabl
         // Dispose of any resources that can be recreated.
     }
     
+    func findSkillIndex(text: String) -> Int{
+        return Constants.skills.index(of: text)!
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 23
+        return self.selectedSkills.count
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.index = indexPath.row
-        //for now just always assume buyable, needs to be fixed to handle combat
-        self.performSegue(withIdentifier: "skillCalcSegue", sender: self)
+        self.skillName = self.selectedSkills[indexPath.row]
+        self.index = findSkillIndex(text: self.skillName)
+        if self.selectedSkills != Constants.combatSkills {
+            self.performSegue(withIdentifier: "skillCalcSegue", sender: self)
+        } else {
+            //combat
+        }
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "skillCell", for: indexPath) as! SkillTableViewCell
-        cell.skillNameLabel.text = Constants.skills[indexPath.row]
-        cell.skillOutlineLabel.text = Constants.skills[indexPath.row]
-        cell.skillNameLabel.textColor = Constants.skillSecondaryColors[indexPath.row]
-        cell.skillImageView.image = Constants.imageSkills[indexPath.row]
-        cell.backgroundColor = Constants.skillPrimaryColors[indexPath.row]
+        cell.skillNameLabel.text = self.selectedSkills[indexPath.row]
+        cell.skillOutlineLabel.text = self.selectedSkills[indexPath.row]
+        cell.skillNameLabel.textColor = Constants.skillSecondaryColors[self.selectedSkills[indexPath.row]]
+        cell.skillImageView.image = Constants.imageSkills[self.selectedSkills[indexPath.row]]
+        cell.backgroundColor = Constants.skillPrimaryColors[self.selectedSkills[indexPath.row]]
         
         return cell
     }
